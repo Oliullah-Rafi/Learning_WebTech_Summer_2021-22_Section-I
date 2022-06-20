@@ -1,26 +1,18 @@
-<?php 
-	session_start();
-
-	if(isset($_SESSION['status'])){
-
-?>
 
 <html>
-<head>
 
-	<title>Home Page </title>
-</head>
 <body>
-		<h1>Welcome</h1>
-		<h3>Registration done</h3>
-		
-		<a href="logout.php"> logout </a>
+
+
+<h1>Welcome Anne!</h1>
+<p><a href ="Registration.php">Profile</p>
+<p><a href ="Registration.php">Change_Password</p>
+<p><a href ="Registration.php">Logout</p>
+
 </body>
+
+
 </html>
 
-<?php } else{
-
-	echo "invalid request";
-} ?>
 
 
