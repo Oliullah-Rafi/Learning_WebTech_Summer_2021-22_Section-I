@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>registration Form Submission</title>
+</head>
+<body>
+		<form  onsubmit="return validate()" method="post" enctype="">
+			<fieldset>
+				<legend>Registration</legend>
+				<table>
+					<tr>
+						<td>Name</td></tr>
+						<tr>
+						<td><input type="text" name="username" id ="username"value=""></td>
+						<td id="ErrUserName"></td>
+					</tr>
+					<tr>
+						<td>ID</td>
+						</tr>
+						<tr>
+						<td><input type="Number" name="id" id="id"value=""></td>
+						<td id="ErrId"></td>
+					</tr>
+					
+					<tr>
+						<td>password</td></tr>
+						<tr>
+						<td><input type="password" name="password" id="password" value=""></td>
+						<td id="ErrPass"></td>
+					</tr>
+					<tr>
+						<td>confirm_password</td></tr>
+						<tr>
+						<td><input type="password" name="confirm" id="confirm" value=""></td>
+						<td id="ErrCPass"></td>
+					</tr>
+					<tr>
+						<td>Phone_Number</td></tr>
+						<tr>
+						<td><input type="text" name="Pnumber" id="Pnumber" value=""></td>
+						<td id="ErrPNum"></td>
+					</tr>
+					<tr>
+						<td>Email</td></tr>
+						<tr>
+						<td><input type="email" name="email" id="email" value=""></td>
+						<td id="ErrEmail"></td>
+					</tr>
+										<tr>
+						<td>DOB</td></tr>
+						<tr>
+						<td><input type="date" name="dob" id="dob" value=""></td>
+					</tr>
+					<tr>
+						<td>Address</td></tr>
+						<tr>
+						<td >
+							<textarea style="height: 70px;width: 180px;"></textarea>
+						</td>
+					</tr>
+					<td><br></td>
+					
+					<tr>
+						<td>
+							<input type="submit" name="" id ="submit"value="SignUp">
+							<a href="signup.html"> Signin </a>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+
+		<script>
+			function validate()
+			{
+				let username = document.getElementById("username").value;
+				
+
+				let id = document.getElementById("id").value;
+				
+
+				let password = document.getElementById("password").value;
+
+				let confirm = document.getElementById("confirm").value;
+
+				let Pnumber = document.getElementById("Pnumber").value;
+
+				let email = document.getElementById("email").value;
+
+				
+
+				
+
+				if(username != "")
+				{
+					return true;
+				}
+				else
+				{
+					document.getElementById('ErrUserName').innerHTML = "Username not found !!!";
+					return false;
+				}
+
+
+
+
+				
+				if(id != "")
+				{
+					return true;
+				}
+				else
+				{
+					
+					document.getElementById('ErrId').innerHTML = "Id is  not Correct !!!";
+					return false;
+				}
+
+				if(password != "")
+				{
+					return true;
+				}
+				else
+				{
+					
+					document.getElementById('ErrPass').innerHTML = "Password is  not Correct !!!";
+					return false;
+				}
+
+				if(confirm != "")
+				{
+					return true;
+				}
+				else
+				{
+					
+					document.getElementById('ErrCPass').innerHTML = "Confirm Password is  not Correct !!!";
+					return false;
+				}
+
+
+
+				if(Pnumber != "")
+				{
+					return true;
+				}
+				else
+				{
+					
+					document.getElementById('ErrPNum').innerHTML = "Phone Number not found !!!";
+					return false;
+				}
+
+
+
+		
+
+
+				
+				if(email != "")
+				{
+					return true;
+				}
+				else
+				{
+					
+					document.getElementById('ErrEmail').innerHTML = "Email not found !!!";
+					return false;
+				}
+
+			}
+
+
+		</script>
+</body>
+</html>
