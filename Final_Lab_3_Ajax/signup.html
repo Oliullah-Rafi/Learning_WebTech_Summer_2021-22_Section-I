@@ -116,6 +116,53 @@ let student = {'username' : username, 'id': id , 'password': password, 'Pnumber'
                 xhttp.send('data='+json); 
 
             }
+							function Sellervalidate(){
+
+var username = document.getElementById('username').value;
+var id=document.getElementById('id').value;
+var password=document.getElementById('password').value;
+let Pnumber=document.getElementById('Pnumber').value;
+let email=document.getElementById('email').value;
+let dob=document.getElementById('dob').value;
+	
+	//document.write('hbsdsabd');
+
+	if(username == ""){
+		document.getElementById('p').innerHTML = "username can't left empty";
+		//return false;
+
+	}
+
+	if(id == ""){
+		document.getElementById('a').innerHTML = "id can't left empty";
+		//return false;
+	}
+
+	if(password == ""){
+		document.getElementById('r').innerHTML = "password can't left empty";
+		//return false;
+	}
+
+	if(Pnumber == ""){
+		document.getElementById('t').innerHTML = "Pnumber can't left empty";
+		//return false;
+	}
+
+	if(email == ""){
+		document.getElementById('h').innerHTML = "email can't left empty";
+		//return false;
+	}
+
+	if(dob == ""){
+		document.getElementById('doba').innerHTML = "email can't left empty";
+		return false;
+	}
+else{
+		return true;
+	}
+
+
+}
 						</td>
 					</tr>
 				</table>
